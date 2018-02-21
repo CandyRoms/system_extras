@@ -4,7 +4,7 @@ ifeq ($(HOST_OS),linux)
 
 include $(CLEAR_VARS)
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := never
 LOCAL_MODULE := fec_test_read
 LOCAL_SRC_FILES := test_read.cpp
 LOCAL_MODULE_TAGS := optional
@@ -21,7 +21,7 @@ include $(BUILD_HOST_EXECUTABLE)
 
 include $(CLEAR_VARS)
 LOCAL_CLANG := true
-LOCAL_SANITIZE := integer
+LOCAL_SANITIZE := never
 LOCAL_MODULE := fec_test_rs
 LOCAL_SRC_FILES := test_rs.c
 LOCAL_MODULE_TAGS := optional

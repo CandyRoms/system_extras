@@ -30,7 +30,7 @@ cc_library {
         },
         linux: {
             sanitize: {
-                misc_undefined: ["integer"],
+                never: true,
             },
         },
     },
